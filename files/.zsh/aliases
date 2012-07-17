@@ -23,3 +23,6 @@ alias be='bundle exec'
 
 alias add_alias='mate -w ~/.zsh/aliases; cd ~/.dot-files; ga files/.zsh/aliases; gc'
 alias git_alias='mate -w ~/.zsh/git_aliases; cd ~/.dot-files; ga files/.zsh/git_aliases; gc'
+
+# Sublime 2
+alias slime='open -a "/Applications/Sublime Text 2.app"'

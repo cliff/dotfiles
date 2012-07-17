@@ -1,11 +1,17 @@
 [user]
-        name = Ben Hoskings
-        email = ben@hoskings.net
+        name = David Reissner
+        email = david@sauspiel.de
 [color]
 	diff = auto
 	status = auto
 	branch = auto
 [core]
-	excludesfile = /Users/ben/.gitignore
+	excludesfile = /Users/Cliff/.gitignore
+	editor = mate -w -l1
+	editor = slime -n -w
+	
 [github]
-	user = benhoskings
+	user = cliff
+[alias]
+	st = status
+	gcv = commit

@@ -8,7 +8,6 @@ setopt hist_ignore_dups
 
 if [ $(uname -s) = 'Darwin' ]; then
   export LANG="en_AU.UTF-8"
-  export EDITOR='mate -w -l1'
   export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin"
   export MANPATH="/usr/local/share/man:/usr/X11/man:/usr/share/man"
 else
@@ -26,7 +25,7 @@ unsetopt autocd
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/Users/ben/.zshrc'
+zstyle :compinstall filename '/Users/Cliff/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -34,6 +33,12 @@ setopt complete_in_word
 # End of lines added by compinstall
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+# autocompletion z script https://github.com/rupa/z
+. ~/.dot-files/files/z/z.sh
+	function precmd () {
+	  _z --add "$(pwd -P)"
+	}
 
 export WORDCHARS='*?[]~=&;!#$%^(){}'
 
