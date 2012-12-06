@@ -26,3 +26,10 @@ alias git_alias='mate -w ~/.zsh/git_aliases; cd ~/.dot-files; ga files/.zsh/git_
 
 # Sublime 2
 alias slime='open -a "/Applications/Sublime Text 2.app"'
+
+# sauspiel
+alias sa="APP=sauspiel"
+alias sk="APP=skatstube"
+alias fu="APP=fuchstreff"
+alias bu="APP=bummerl"
+alias sp="bundle exec rspec spec"
